@@ -11,7 +11,7 @@ public class CCuenta {
     /**
      * Nombre de la persona titular
      */
-
+    private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
