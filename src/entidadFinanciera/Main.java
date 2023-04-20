@@ -3,28 +3,47 @@
  * and open the template in the editor.
  */
 
-package tarea4endes23;
+package entidadFinanciera;
 
-
+/**
+ *
+ * @author Angel
+ */
 public class Main {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        CCuenta miCuenta;
+        CCuenta objetoCuenta;
         double saldoActual;
         
 
-        miCuenta = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
-        saldoActual = miCuenta.estado();
+        objetoCuenta = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        saldoActual = objetoCuenta.estado();
         System.out.println("El saldo actual es"+ saldoActual );
         
     
     }
     
+    /**
+     *
+     * @param c
+     * @param cantidad
+     * @throws Exception
+     */
     public static void probarIngresar(CCuenta c, int cantidad) throws Exception{
         c.ingresar(cantidad);
         
     }
     
+    /**
+     *
+     * @param c
+     * @param cantidad
+     * @throws Exception
+     */
     public static void probarRetirar(CCuenta c, int cantidad) throws Exception{
         c.retirar(cantidad);
     }
